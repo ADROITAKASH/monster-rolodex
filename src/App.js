@@ -23,7 +23,7 @@ class App extends React.Component{
     const filterdMonsters = monsters.filter(monster=>(monster.name.toLowerCase().includes(search.toLowerCase())));
     return(
       <div className='App'>
-        <Search placeholder='search monster' onchange={(e)=>(this.setState({search:e.target.value}))}></Search>
+        <Search placeholder='search monsters' onchange={(e)=>(this.setState({search:e.target.value}))}></Search>
         <CardList monsters={filterdMonsters}></CardList>
       </div>
     );
